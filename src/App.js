@@ -4,7 +4,6 @@ import {BrowserRouter} from "react-router-dom";
 import SideBar from "./components/UI/SideBar/SideBar"
 import Header from "./components/UI/Header/Header";
 import ComponentTaboos from "./components/UI/ComponentTaboos/ComponentTaboos"
-import Navbar from "./components/UI/Navbar/Navbar";
 import AppRouter from "./components/AppRouter";
 import {AuthContext} from "./context";
 
@@ -32,7 +31,6 @@ export default function App() {
                     <div>
                         <Header/>
                         <ComponentTaboos/>
-                        <Navbar/>
                         <div className="content">
                             <AppRouter/>
                         </div>

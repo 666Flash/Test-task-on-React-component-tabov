@@ -1,13 +1,22 @@
 .component_taboos {
-    height: 40px;
+    width: 1859px;
+    height: 72px;
+    overflow: auto;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     border: 1px solid #AEB6CE33;
 }
 
 .button_container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_container {
     display: flex;
 }
 
@@ -19,6 +28,7 @@ img {
 }
 
 .text {
+    margin-left: 10px;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
@@ -28,13 +38,17 @@ img {
 }
 
 .button_closing {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 15px;
+    border-color: red;
     background-image: url('../../../pictures/icon/vector.png');
-    background-repeat: no-repeat;
+    background-repeat: round;
+    background-color: white;
+    cursor: pointer;
     display: none;
 }
-
 
 .button_container:hover
 .button_closing {
