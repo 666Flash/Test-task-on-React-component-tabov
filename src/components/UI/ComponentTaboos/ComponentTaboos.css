@@ -1,0 +1,42 @@
+.component_taboos {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #AEB6CE33;
+}
+
+.button_container {
+    display: flex;
+}
+
+img {
+    width: 25px;
+    height: 15px;
+    padding: 0px 5px;
+    color: rgba(127, 133, 141, 1);
+}
+
+.text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.1px;
+    text-align: left;
+    color: rgba(127, 133, 141, 1);
+}
+
+.button_closing {
+    width: 18px;
+    height: 18px;
+    background-image: url('../../../pictures/icon/vector.png');
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+.button_container:hover
+.button_closing {
+    display: block;
+}

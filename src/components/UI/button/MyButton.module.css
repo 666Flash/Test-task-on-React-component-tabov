@@ -1,0 +1,13 @@
+.line {
+    height: 16px;
+    border-left: 1px solid rgba(174, 182, 206, 0.2)
+}
+
+.myBtn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
