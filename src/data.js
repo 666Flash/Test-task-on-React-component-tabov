@@ -1,123 +1,123 @@
-import fiRsList from './pictures/icon/fi-rs-list.png';
-import fiRsCube from './pictures/icon/fi-rs-cube.png';
-import fiRsBookAlt from './pictures/icon/fi-rs-book-alt.png';
-import fiRsBoxAlt from './pictures/icon/fi-rs-box-alt.png';
-import fiRsSettings from './pictures/icon/fi-rs-settings.png';
-import fiRsUserAdd from './pictures/icon/fi-rs-user-add.png';
-import fiRsBank from './pictures/icon/fi-rs-bank.png';
-import fiRsApps from './pictures/icon/fi-rs-apps.png';
-import fiRsEnvelope from './pictures/icon/fi-rs-envelope.png';
-import fiRsShoppingCartCheck from './pictures/icon/fi-rs-shopping-cart-check.png';
-import fiRsChartPie from './pictures/icon/fi-rs-chart-pie.png';
-import fiRsBrowser from './pictures/icon/fi-rs-browser.png';
-import fiRsPhoneCall from './pictures/icon/fi-rs-phone-call.png';
-import fiRsThumbtack from './pictures/icon/fi-rs-thumbtack.png';
-import fiRsShop from './pictures/icon/fi-rs-shop.png';
+import { BiListUl } from "react-icons/bi";
+import { BiCube } from "react-icons/bi";
+import { BiBookOpen } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
+import { FiUserPlus } from "react-icons/fi";
+import { BsBank } from "react-icons/bs";
+import { FiGrid } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
+import { BiPieChartAlt2 } from "react-icons/bi";
+import { BsCreditCard2Front } from "react-icons/bs";
+import { FiPhoneCall } from "react-icons/fi";
+import { BsPinAngle } from "react-icons/bs";
+import { AiOutlineShop } from "react-icons/ai";
+import { BsCartCheck } from "react-icons/bs";
+import { AiOutlineCreditCard } from "react-icons/ai";
 
 export const tabs = [
     {
         id: 1,
         title: 'Accounting',
         router: '/accounting',
-        image: fiRsUserAdd,
+        image: <FiUserPlus/>,
         positionStatic: false
     },
     {
         id: 2,
         title: 'Administration',
         router: '/administration',
-        image: fiRsSettings,
+        image: <FiSettings />,
         positionStatic: true
     },
     {
         id: 3,
         title: 'Auswahllisten',
         router: '/auswahllisten',
-        image: fiRsList,
+        image: <BiListUl/>,
         positionStatic: true
     },
     {
         id: 4,
         title: 'Banking',
         router: '/banking',
-        image: fiRsBank,
+        image: <BsBank />,
         positionStatic: false
     },
     {
         id: 5,
         title: 'Dashboard',
         router: '/dashboard',
-        image: fiRsApps,
+        image: <FiGrid/>,
         positionStatic: false
     },
     {
         id: 6,
         title: 'Einkauf',
         router: '/einkauf',
-        image: fiRsShoppingCartCheck,
+        image: <BsCartCheck/>,
         positionStatic: false
     },
     {
         id: 7,
         title: 'Help',
         router: '/help',
-        image: fiRsBookAlt,
+        image: <BiBookOpen/>,
         positionStatic: false
     },
     {
         id: 8,
         title: 'Lagerverwaltung',
         router: '/lagerverwaltung',
-        image: fiRsBoxAlt,
+        image: <AiOutlineCreditCard/>,
         positionStatic: false
     },
     {
         id: 9,
         title: 'Post Office',
         router: '/post-office',
-        image: fiRsEnvelope,
+        image: <FiMail/>,
         positionStatic: false
     },
     {
         id: 10,
         title: 'Rechn',
         router: '/rechn',
-        image: fiRsBrowser,
+        image: <BsCreditCard2Front/>,
         positionStatic: false
     },
     {
         id: 11,
         title: 'Statistik',
         router: '/statistik',
-        image: fiRsChartPie,
+        image: <BiPieChartAlt2/>,
         positionStatic: false
     },
     {
         id: 12,
         title: 'Tab Anpinnen',
         router: '/tab-anpinnen',
-        image: fiRsThumbtack,
+        image: <BsPinAngle/>,
         positionStatic: false
     },
     {
         id: 13,
         title: 'Telefonie',
         router: '/telefonie',
-        image: fiRsPhoneCall,
+        image: <FiPhoneCall/>,
         positionStatic: false
     },
     {
         id: 14,
         title: 'Verkauf',
         router: '/verkauf',
-        image: fiRsShop,
+        image: <AiOutlineShop/>,
         positionStatic: false
     },
     {
         id: 15,
         title: 'Warenbestand',
         router: '/warenbestand',
-        image: fiRsCube,
+        image: <BiCube/>,
         positionStatic: false
     },
 ]

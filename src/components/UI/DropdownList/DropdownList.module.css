@@ -1,0 +1,32 @@
+.menu_item_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.line {
+    position: absolute;
+    top: 48px;
+    width: 180px;
+    margin: 0 20px;
+    border-top: 1px solid rgba(174, 182, 206, 0.2)
+}
+
+.menu_item {
+    width: 200px;
+    height: 48px;
+}
+
+.myDl {
+    height: 48px;
+    padding: 5px 15px;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    background: rgba(241, 245, 248, 1);
+}

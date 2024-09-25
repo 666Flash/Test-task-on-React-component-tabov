@@ -1,0 +1,25 @@
+.button_closing {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-image: none;
+    background-color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.button_container:hover
+.button_closing {
+    border-radius: 15px;
+    border-color: red;
+    background-image: url('../../../pictures/icon/vector.png');
+    background-repeat: round;
+}
+
+.dropdown_list_container:hover
+.button_closing {
+    border-radius: 15px;
+    border-color: red;
+    background-image: url('../../../pictures/icon/vector.png');
+    background-repeat: round;
+}

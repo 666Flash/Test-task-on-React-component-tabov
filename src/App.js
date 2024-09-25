@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './styles/App.css';
+import {tabs} from "./data"
 import {BrowserRouter} from "react-router-dom";
 import SideBar from "./components/UI/SideBar/SideBar"
 import Header from "./components/UI/Header/Header";
@@ -8,8 +9,9 @@ import AppRouter from "./components/AppRouter";
 import {AuthContext} from "./context";
 
 export default function App() {
-    const [isAuth, setIsAuth] = useState('login');
+    const [isAuth, setIsAuth] = useState(tabs[0].router);
     const [isLoading, setLoading] = useState(true);
+    const [isTabs, setTabs] = useState(tabs);
 
     useEffect(() => {
         if (localStorage.getItem('auth')) {
@@ -22,7 +24,9 @@ export default function App() {
         <AuthContext.Provider value={{
             isAuth,
             setIsAuth,
-            isLoading
+            isLoading,
+            isTabs,
+            setTabs
         }}>
             <BrowserRouter>
                 <div className="body_container">

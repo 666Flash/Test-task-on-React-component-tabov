@@ -4,9 +4,8 @@ import {privateRoutes, publicRoutes} from "../router";
 import {AuthContext} from "../context";
 import Loader from "./UI/Loader/Loader";
 
-const AppRouter = () => {
+export default function AppRouter() {
     const {isAuth, isLoading} = useContext(AuthContext);
-    console.log('isAuth', isAuth)
 
     if (isLoading) {
         return <Loader/>
@@ -22,9 +21,7 @@ const AppRouter = () => {
                     key={route.path}
                 />
             )}
-            <Redirect to='/login'/>
+            <Redirect to={isAuth}/>
         </Switch>
     );
 };
-
-export default AppRouter;

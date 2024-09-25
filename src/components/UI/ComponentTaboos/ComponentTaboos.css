@@ -20,13 +20,6 @@
     display: flex;
 }
 
-img {
-    width: 25px;
-    height: 15px;
-    padding: 0px 5px;
-    color: rgba(127, 133, 141, 1);
-}
-
 .text {
     margin-left: 10px;
     font-family: Poppins;
@@ -35,22 +28,73 @@ img {
     line-height: 16.1px;
     text-align: left;
     color: rgba(127, 133, 141, 1);
+    white-space: nowrap
+}
+
+.button_dropdown_list {
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 36px;
+    height: 55px;
+    background-position: center;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(120, 119, 119, .4);
+}
+
+.menu_dropdown_list {
+    position: absolute;
+    right: 0px;
+    top: 135px;
+    width: 225px;
+    border: 1px solid rgba(174, 182, 206, 0.2);
+    background-color: white;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.menu_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dropdown_list_container {
+    width: 195px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .button_closing {
     width: 15px;
     height: 15px;
-    margin-left: 5px;
-    border-radius: 15px;
-    border-color: red;
-    background-image: url('../../../pictures/icon/vector.png');
-    background-repeat: round;
+    border: none;
+    background-image: none;
     background-color: white;
     cursor: pointer;
-    display: none;
+    display: block;
 }
 
 .button_container:hover
 .button_closing {
-    display: block;
+    border-radius: 15px;
+    border-color: red;
+    background-image: url('../../../pictures/icon/vector.png');
+    background-repeat: round;
+}
+
+.dropdown_list_container:hover
+.button_closing {
+    border-radius: 15px;
+    border-color: red;
+    background-image: url('../../../pictures/icon/vector.png');
+    background-repeat: round;
 }
